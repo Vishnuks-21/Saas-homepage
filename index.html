@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Landing Page</title>
+
+    <style>
+        /* -------- RESET -------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            color: #0f172a;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* -------- NAVBAR -------- */
+        header {
+            background: #ffffff;
+            padding: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        nav a {
+            margin-left: 25px;
+            font-weight: 500;
+            color: #334155;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* -------- HERO -------- */
+        .hero {
+            padding: 100px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+
+        .hero img {
+            width: 100%;
+        }
+
+        /* -------- FEATURES -------- */
+        .features {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        /* -------- STATS -------- */
+        .stats {
+            background: #2563eb;
+            color: white;
+            padding: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+
+        .stats h3 {
+            font-size: 42px;
+        }
+
+        /* -------- PRICING -------- */
+        .pricing {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .price-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+        }
+
+        .price-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 42px;
+            margin: 20px 0;
+        }
+
+        /* -------- CTA -------- */
+        .cta {
+            background: #0f172a;
+            color: white;
+            padding: 80px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* -------- FOOTER -------- */
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: #64748b;
+        }
+
+        /* -------- RESPONSIVE -------- */
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .feature-grid,
+            .pricing-grid,
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">SaaSify</div>
+    <nav>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <a class="btn" href="#">Get Started</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Build Faster With Our Modern SaaS Platform</h1>
+        <p>All-in-one solution to manage, scale, and grow your business with confidence.</p>
+        <a class="btn" href="#">Start Free Trial</a>
+    </div>
+    <img src="https://illustrations.popsy.co/white/business-analysis.svg" alt="hero">
+</section>
+
+<section class="features">
+    <h2>Powerful Features</h2>
+    <div class="feature-grid">
+        <div class="card">
+            <h3>🚀 Fast Performance</h3>
+            <p>Optimized infrastructure for blazing fast load times.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Secure</h3>
+            <p>Enterprise-grade security to protect your data.</p>
+        </div>
+        <div class="card">
+            <h3>📊 Analytics</h3>
+            <p>Real-time insights to make smarter decisions.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div>
+        <h3>10k+</h3>
+        <p>Customers</p>
+    </div>
+    <div>
+        <h3>99.9%</h3>
+        <p>Uptime</p>
+    </div>
+    <div>
+        <h3>120+</h3>
+        <p>Countries</p>
+    </div>
+</section>
+
+<section class="pricing">
+    <h2>Simple Pricing</h2>
+    <div class="pricing-grid">
+        <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price">$9</p>
+            <p>Perfect for individuals</p>
+            <a class="btn" href="#">Choose Plan</a>
+        </div>
+        <div class="price-card">
+            <h3>Pro</h3>
+            <p class="price">$29</p>
+            <p>Best for teams</p>
+            <a class="btn" href="#">Choose Plan</a>
+        </div>
+        <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">$99</p>
+            <p>Advanced features</p>
+            <a class="btn" href="#">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Start Building Today</h2>
+    <p>Join thousands of businesses using SaaSify</p>
+    <a class="btn" href="#">Get Started</a>
+</section>
+
+<footer>
+    © 2025 SaaSify. All rights reserved.
+</footer>
+
+</body>
+</html>
